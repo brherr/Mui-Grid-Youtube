@@ -1,5 +1,5 @@
 import { useState } from 'react'
-import { Grid, Box } from '@mui/material'
+import { Grid, Box, Container } from '@mui/material'
 import { ThemeProvider, createTheme } from '@mui/material/styles';
 import CssBaseline from '@mui/material/CssBaseline';
 import MuiGrid from './MuiGrid'
@@ -15,11 +15,13 @@ function App() {
 
   return (
     <ThemeProvider theme={darkTheme}>
-    <CssBaseline />
-      <MuiGrid />
-      </ThemeProvider>
-   
-      
+      <CssBaseline />
+        <Container sx={{ bgcolor: "#3f51b5", height: "80vh", paddingY: "20px", marginY: "80px"}}>
+          <MuiGrid />
+        </Container>
+    </ThemeProvider>
+
+
   )
 }
 
