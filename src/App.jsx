@@ -6,6 +6,7 @@ import './App.css'
 import MuiGrid from './MuiGrid'
 import Single from './Single';
 import NestedGrid from './NestedGrid';
+import SimpleNested from './SimpleNested';
 
 const darkTheme = createTheme({
   palette: {
@@ -24,7 +25,8 @@ function App() {
         <Container sx={{ bgcolor: "#4c4177", backgroundImage: "linear-gradient(315deg, #4c4177 0%, #2a5470 74%)", height: "90vh", paddingY: "20px", marginY: "80px"}}>
           {/* <MuiGrid /> */}
           {/* <Single /> */}
-          <NestedGrid />
+          {/* <NestedGrid /> */}
+          <SimpleNested />
         </Container>
     </ThemeProvider>
 
